@@ -50,7 +50,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            display-name = "LAYER 0";
         };
 
         layer_1 {
@@ -62,7 +62,7 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &kp DELETE
             >;
 
-            display-name = "layer1";
+            display-name = "LAYER 1";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -74,7 +74,8 @@
 &trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
             >;
-
+            
+            display-name = "LAYER 2";
             sensor-bindings = <&scroll_encoder>;
         };
 

@@ -7,5 +7,7 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Pinned to match config/west.yml — both at the last commit before ZMK PR #3060 (Zephyr 4.1) so
+    # the reusable workflow's diagnostic steps don't call HWMv2-only `west boards --format "{qualifiers}"`.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@abb64ba316c29caddc49727ca2cac2f0ed5970c7
 

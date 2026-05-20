@@ -12,7 +12,9 @@ manifest:
       revision: refactor
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Pinned to the last commit before ZMK PR #3060 ("feat!: Move to zephyr v4.1") merged on 2025-12-09.
+      # The eyelash_sofle board is HWMv1; Zephyr 4.1 requires HWMv2. Unpin once the board is migrated.
+      revision: abb64ba316c29caddc49727ca2cac2f0ed5970c7
       import: app/west.yml
   self:
     path: config          
